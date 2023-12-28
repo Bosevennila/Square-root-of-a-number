@@ -16,15 +16,27 @@ To write a program to find the square root of a number.
 
 ## Program:
 ```
-/*
+
 Program to find the square root for the given number(newton's method) using function.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: CHANDRAPRIYADHARSHINI C
+RegisterNumber:  23013526
+
+num=int(input())
+a=1e-6
+max=100
+
+guess=num/2.0
+for _ in range(max):
+    new=0.5*(guess+num/guess)
+    if abs(new-guess)<a:
+       break
+    guess=new
+print(f"Square root of the number: {new}")
 ```
 
 ## Output:
-![gcd of two number](gcd.png)
+![image](https://github.com/Bosevennila/Square-root-of-a-number/assets/144870486/9e296899-dfdc-46b9-b22d-398c13f70c04)
+
 
 
 ## Result:
